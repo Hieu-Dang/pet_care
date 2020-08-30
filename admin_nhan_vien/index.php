@@ -1,20 +1,21 @@
 <?php 
 	session_start();
+	require_once('./model/helper.php');
 	require_once('./model/database.php');
 	$db = new Database();
 
 	if (isset($_GET['controller'])) {
 		$controller = $_GET['controller'];
 	}else{
-		$controller = 'trangchu';
+		$controller = 'login';
 	}
 
 	switch ($controller) {
-		case 'trangchu':
-			require_once('controller/trangchu.php');
+		case 'login':
+			require_once('controller/login.php');
 			break;
 		default:
-			require_once('controller/error.php');
+			echo "Lỗi trang";
 			break;
 	}
 ?>
