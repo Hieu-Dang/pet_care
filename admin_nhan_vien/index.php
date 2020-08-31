@@ -13,6 +13,9 @@
 	switch ($controller) {
 		case 'login':
 			require_once('controller/login.php');
+			break;
+		case 'trangchu':
+			require_once('controller/trangchu.php');
 			break;	
 		default:
 			echo "Lỗi trang";
