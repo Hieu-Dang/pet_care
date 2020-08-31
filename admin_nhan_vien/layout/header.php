@@ -15,20 +15,82 @@
 <body>
 	<div class="container-fluid mt-1">
 		<div class="row">
-			<div class="col-md-3" id='admin-header'>
+			<div class="col-md-2" id='admin-header'>
 				<div class="row mt-2">
 					<span class=" col-md-6"><?php echo $data_user[0]['full_name'] ?></span>
-					<span class="col-md-4 "><?php if ($data_user[0]['lv']=='1') {
+					<a href="?controller=profile" class="col-md-4 "><?php if ($data_user[0]['lv']=='1') {
 						echo 'admin';
 					}else{echo 'nhân viên';} ?>	
-					</span>
-					<a href="?controller=proflie" class="col-md-2">
-						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-						  <path fill-rule="evenodd" d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
-						</svg>
+					</a>
+
+				
+				</div>
+				<div class="row mt-5" id="main-info" <?php if ($controller=='trangchu') {
+					echo 'style="background-color: gray;"' ;
+				} ?>>
+					<a class="col-md-12" href="?controller=trangchu" >
+						<h5>Thông tin chung<h5>
 					</a>
 				</div>
-				<div class="row mt-1">
-					
+				<div class="row mt-1" id="main-info" <?php if ($controller=='doanhthu') {
+					echo 'style="background-color: gray;"' ;
+				} ?>>
+					<a class="col-md-12 " href="?controller=doanhthu" >
+						<h5>Quản lí doanh thu<h5>
+					</a>
+				</div>
+				<div class="row mt-1" id="main-info" <?php if ($controller=='ql_nhanvien') {
+					echo 'style="background-color: gray;"' ;
+				} ?>>
+					<a class="col-md-12 " href="?controller=ql_nhanvien">
+						<h5>Quản lí nhân viên/shipper<h5>
+					</a>
+				</div>
+				<div class="row mt-1" id="main-info" <?php if ($controller=='ql_order') {
+					echo 'style="background-color: gray;"' ;
+				} ?>>
+					<a class="col-md-12 " href="?controller=ql_order">
+						<h5>Quản lí giao dịch/ đơn hàng<h5>
+					</a>
+				</div>
+				<div class="row mt-1" id="main-info" <?php if ($controller=='ql_product') {
+					echo 'style="background-color: gray;"' ;
+				} ?>>
+					<a class="col-md-12 " href="?controller=ql_product">
+						<h5>Quản lí sản phẩm/ danh mục<h5>
+					</a>
+				</div>
+				<div class="row mt-1" id="main-info" <?php if ($controller=='ql_web') {
+					echo 'style="background-color: gray;"' ;
+				} ?>>
+					<a class="col-md-12 " href="?controller=ql_web">
+						<h5>Quản lí hiển thị web<h5>
+					</a>
+				</div>
+				<div class="row mt-1" id="main-info" <?php if ($controller=='ql_user') {
+					echo 'style="background-color: gray;"' ;
+				} ?>>
+					<a class="col-md-12 " href="?controller=ql_user">
+						<h5>Quản lí người dùng<h5>
+					</a>
+				</div>
+				<div class="row mt-1"  id="main-info" <?php if ($controller=='ql_feedback') {
+					echo 'style="background-color: gray;"' ;
+				} ?>>
+					<a class="col-md-12 " href="?controller=ql_feedback">
+						<h5>Quản lí comment/rate/feedback<h5>
+					</a>
+				</div>
+				<div class="row mt-1" id="main-info" <?php if ($controller=='ql_ship') {
+					echo 'style="background-color: gray;"' ;
+				} ?>>
+					<a class="col-md-12 " href="?controller=ql_ship">
+						<h5>Quản li tiền ship<h5>
+					</a>
+				</div>
+				<div class="row mt-1" id="main-info">
+					<a class="col-md-12 " href="?controller=logout" >
+						<h5>đăng xuất<h5>
+					</a>
 				</div>
 			</div>

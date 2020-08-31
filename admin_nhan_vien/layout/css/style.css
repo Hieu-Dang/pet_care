@@ -2,3 +2,12 @@
 	background-color: #424040;
 	color: white;
 }
+#main-info a{
+	text-decoration: none;
+	color: white;
+
+}
+#main-info:hover{
+	background-color: gray;
+
+}
