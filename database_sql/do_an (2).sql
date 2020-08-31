@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  Dim 30 août 2020 à 09:56
+-- Généré le :  lun. 31 août 2020 à 05:39
 -- Version du serveur :  10.4.11-MariaDB
 -- Version de PHP :  7.2.26
 
@@ -45,7 +45,8 @@ CREATE TABLE `admin_nhanvien` (
 --
 
 INSERT INTO `admin_nhanvien` (`id`, `username`, `password`, `lv`, `quyen_product`, `quyen_user`, `full_name`, `phone`, `quyen_oder`) VALUES
-(4, 'admin', 'admin123', 1, 1, 1, 'Tô Văn Tùng', '0383643099', 1);
+(7, 'admin', 'a66abb5684c45962d887564f08346e8d', 1, 1, 1, 'Tô Văn Tùng', '0383643099', 1),
+(9, 'nhanvien1', 'f5fce1662295e09e104dc99a27978510', 2, 0, 0, 'Đặng Minh Hiếu', '0383643095', 0);
 
 -- --------------------------------------------------------
 
@@ -11652,13 +11653,6 @@ CREATE TABLE `shipper` (
   `username_xuli` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Déchargement des données de la table `shipper`
---
-
-INSERT INTO `shipper` (`id`, `full_name`, `cmnd`, `created`, `username_xuli`) VALUES
-(1, 'Hoàng Hoài Thương', 'fsadfsadf', '2020-08-11 00:00:00', 4);
-
 -- --------------------------------------------------------
 
 --
@@ -11828,7 +11822,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT pour la table `admin_nhanvien`
 --
 ALTER TABLE `admin_nhanvien`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT pour la table `catalog`
