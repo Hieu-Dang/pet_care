@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
-<h1>Đây là trang chủ</h1>
-</body>
-</html>
+
+<?php require_once('layout/header.php'); ?>
+
+	<div class="col-md-9" id="main-screen">
+					
+	</div>
+<?php require_once('layout/footer.php'); ?>
